@@ -22,7 +22,7 @@ namespace When_clicking_button
         {
             driver.Navigate().GoToUrl("http://localhost/abcc/WebForm1.aspx");
             driver.FindElement(By.Id("Button1")).Click();
-            NUnit.Framework.Assert.AreEqual(driver.FindElement(By.Id("TextBox1")).Text, "QA Rules!!!");
+            NUnit.Framework.Assert.AreEqual(driver.FindElement(By.Id("Label1")).Text, "QA Rules!!!");
         }
 
         [TearDown]
