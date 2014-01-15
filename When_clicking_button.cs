@@ -20,9 +20,12 @@ namespace When_clicking_button
         [Category("CITest")]
         public void Should_say_good_things_about_qa()
         {
+            //Act
             driver.Navigate().GoToUrl("http://localhost/abcc/WebForm1.aspx");
             driver.FindElement(By.Id("Button1")).Click();
-            NUnit.Framework.Assert.AreEqual(driver.FindElement(By.Id("Label1")).Text, "QA Rules!");
+            
+            //Assert
+            NUnit.Framework.Assert.AreEqual(driver.FindElement(By.Id("Label1")).Text, "QA Rules!!!");
         }
 
         [TearDown]
